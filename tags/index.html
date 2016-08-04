@@ -31,7 +31,9 @@
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="https://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="/css/font-awesome.min.css"> -->
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Hux Delete, sad but pending in China
@@ -163,13 +165,11 @@
             <!-- 标签云 -->
             <div id='tag_cloud' class="tags">
                 
-                    <a href="#生活" title="生活" rel="1">生活</a>
-                
                     <a href="#前端开发" title="前端开发" rel="3">前端开发</a>
                 
                     <a href="#JavaScript" title="JavaScript" rel="3">JavaScript</a>
                 
-                    <a href="#翻译" title="翻译" rel="1">翻译</a>
+                    <a href="#生活" title="生活" rel="1">生活</a>
                 
                     <a href="#OS" title="OS" rel="1">OS</a>
                 
@@ -177,36 +177,12 @@
                 
                     <a href="#Linux" title="Linux" rel="1">Linux</a>
                 
+                    <a href="#翻译" title="翻译" rel="1">翻译</a>
+                
             </div>
 
             <!-- 标签列表 -->
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="生活">
-                    <span class="tag-text">生活</span>
-                </span>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/2015/01/29/hello-2015/">
-                        <h2 class="post-title">
-                            Welcome to Hux Blog
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                 "Hello World, Hello Blog"
-                            </h3>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-            </div>
             
             <div class="one-tag-list">
                 <span class="fa fa-tag listing-seperator" id="前端开发">
@@ -329,8 +305,8 @@
             </div>
             
             <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="翻译">
-                    <span class="tag-text">翻译</span>
+                <span class="fa fa-tag listing-seperator" id="生活">
+                    <span class="tag-text">生活</span>
                 </span>
                 
                   <!-- <li class="listing-item">
@@ -338,10 +314,14 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/2015/09/22/js-version/">
+                     <a href="/2015/01/29/hello-2015/">
                         <h2 class="post-title">
-                            Example Post
+                            Welcome to Hux Blog
                         </h2>
+                        
+                            <h3 class="post-subtitle">
+                                 "Hello World, Hello Blog"
+                            </h3>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -420,6 +400,28 @@
                             <h3 class="post-subtitle">
                                 不适合人类阅读，非常水的自我笔记
                             </h3>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="翻译">
+                    <span class="tag-text">翻译</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2015/09/22/js-version/">
+                        <h2 class="post-title">
+                            Example Post
+                        </h2>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -587,7 +589,7 @@
 
 <!--fastClick.js -->
 <script>
-    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
