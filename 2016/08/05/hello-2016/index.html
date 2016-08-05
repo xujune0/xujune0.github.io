@@ -13,11 +13,11 @@
 
     <title>
         
-          Example Post using Keynote Layout - 精靈社記 | Julian&#39;s Blog
+          Welcome to Julian&#39;s Blog - 精靈社記 | Julian&#39;s Blog
         
     </title>
 
-    <link rel="canonical" href="https://xujune0.github.io/2015/07/09/js-module-7day/">
+    <link rel="canonical" href="https://xujune0.github.io/2016/08/05/hello-2016/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -94,14 +94,14 @@
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
@@ -152,42 +152,29 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        /*background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')*/
-        height: 500px;
-        overflow: hidden;
-    }
-    header iframe{
-        width: 100%;
-        height: 100%;
-        border: 0;
+        background-image: url('post-bg-2015.jpg')
     }
 </style>
 <header class="intro-header" >
-    <iframe src="http://huangxuan.me/js-module-7day/"/>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <div class="tags">
-                            
-                              <a class="tag" href="/tags/前端开发/" title="前端开发">前端开发</a>
-                            
-                              <a class="tag" href="/tags/JavaScript/" title="JavaScript">JavaScript</a>
-                            
-                        </div>
-
-                        <h1>Example Post using Keynote Layout</h1>
-                        <h2 class="subheading">Keynote: JavaScript Modularization Journey</h2>
-                        <span class="meta">
-                            Posted by Hux on
-                            2015-07-09
-                        </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#生活感悟" title="生活感悟">生活感悟</a>
                         
                     </div>
+                    <h1>Welcome to Julian&#39;s Blog</h1>
+                    <h2 class="subheading"> &quot;Hello World, Hello Friend&quot;</h2>
+                    <span class="meta">
+                        Posted by Julian Xu on
+                        2016-08-05
+                    </span>
                 </div>
             </div>
         </div>
-    </iframe>
+    </div>
 </header>
 
 <!-- Post Content -->
@@ -202,23 +189,106 @@
                 post-container">
 
                 <blockquote>
-<p>下滑这里查看更多内容</p>
+<p>“Yes! It’s on. ”</p>
 </blockquote>
-<p>7月9日，我在公司内部进行了名为「JavaScript 模块化七日谈」分享，并将该 Slides 分享到了微博上。出乎意料地，这篇微博先后被 @JS小组 @尤小右 @寸志 等近 200 人转发，阅读达到 10w，获得了还不错的评价。</p>
-<p>于是，我决定将它重新发到我的博客上，并为它专门制作了适用于 Keynote 展示文稿的新布局。它能自动根据屏幕大小/旋转以一定比例填充屏幕，你也可以直接点击下方链接在新页面打开，来获得更好的、沉浸式的全屏体验</p>
-<h3 id="Watch-Slides-→"><a href="#Watch-Slides-→" class="headerlink" title="Watch Slides →"></a><a href="http://huangxuan.me/js-module-7day" target="_blank" rel="external">Watch Slides →</a></h3><p><img src="http://huangxuan.me/js-module-7day/attach/qrcode.png" width="350" height="350"></p>
-<p><small class="img-hint">你也可以通过扫描二维码在手机上观看</small></p>
-<p>这个 Web Slides 开源在<a href="https://github.com/Huxpro/js-module-7day" target="_blank" rel="external">我的 Github 上</a>，欢迎你帮助我完善这个展示文稿，你可以给我提 issue，可以 fork &amp; pull request。如果它能帮助到你了，希望你还能不吝啬 star 一下这个项目</p>
-<h3 id="Catalog"><a href="#Catalog" class="headerlink" title="Catalog"></a>Catalog</h3><ul>
-<li>第一日 上古时期 <strong><em>Module?</em></strong> 从设计模式说起</li>
-<li>第二日 石器时代 <strong><em>Script Loader</em></strong> 只有封装性可不够，我们还需要加载</li>
-<li>第三日 蒸汽朋克 <strong><em>Module Loader</em></strong> 模块化架构的工业革命</li>
-<li>第四日 号角吹响 <strong><em>CommonJS</em></strong> 征服世界的第一步是跳出浏览器</li>
-<li>第五日 双塔奇兵 <strong><em>AMD/CMD</em></strong> 浏览器环境模块化方案</li>
-<li>第六日 精灵宝钻 <strong><em>Browserify/Webpack</em></strong> 大势所趋，去掉这层包裹！</li>
-<li>第七日 王者归来 <strong><em>ES6 Module</em></strong> 最后的战役</li>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>忙活了两天，【精靈社記】的Blog就这么开通了。</p>
+<p><a href="#build">跳过废话，直接看如何搭建 </a></p>
+<p>过去几年，曾先后用过Emlog、WordPress搭建过博客。搭建的过程并不难，主要在于域名和空间上。曾经试用过免费空间、免费域名，但始终不好用，访问速度慢且麻烦。也曾想过购买域名和空间，但只是搭建来玩玩的，平时也没写几篇文章，故放弃了此想法。</p>
+<p>2015年大学毕业，开始在微信公众号平台开通了【精靈社記】微信号，渐渐第开始了写文章；尽管写的不怎么好，但对于写作的平台却挑剔起来。对于微信公众号的文章编辑深感不爽，后来又使用了简书写了几篇文。直到了解了Markdown，喜欢其带来的优雅写作体验。</p>
+<p>前两天，知悉了可以利用“hexo”+“github”搭建静态博客,且支持Markdown写作，于是乎，又折腾了两天来了解并动起手来。最终成功开通了此博客平台。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><p id="build"></p></h2><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>接下来说说搭建这个博客的过程。  </p>
+<p>对于我这种非技术人员，首先，要先介绍几个概念性的东西:</p>
+<ul>
+<li><p><strong>Hexo:</strong> hexo是一款基于Node.js的静态博客框架，搭建过程比较快捷。 详情可直接看<a href="https://hexo.io/" target="_blank" rel="external">hexo官网</a> 。</p>
+</li>
+<li><p><strong>Github Pages:</strong> Github据说是全球最大同性交友社区，毕竟程序员大多数都是男性。GitHub Pages本用于介绍托管在GitHub的项目， 不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。简单说，可以被认为是用户编写的、托管在github上的静态网页。</p>
+</li>
 </ul>
-<h3 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h3><p><a href="http://lab.hakim.se/reveal-js" target="_blank" rel="external">Reveal.js</a></p>
+<p>而利用“hexo”+“github”的优点非常明显：</p>
+<ul>
+<li><strong>Markdown</strong> 带来的优雅写作体验</li>
+<li>利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机<ul>
+<li>如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了</li>
+</ul>
+</li>
+</ul>
+<p>对于我这种技术小白，搭建过程或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。</p>
+<p>只需要几个简单命令，就可以完成一切。</p>
+<pre><code>nexo n #写文章
+hexo g #生成
+hexo d #部署 # 可与hexo g合并为 hexo d -g
+</code></pre><h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><h5 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h5><p>用来生成静态页面的，直接到<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>下载相应平台的最新版本，直接安装即可。</p>
+<h5 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h5><p>把本地的hexo内容提交到github上去.Mac 安装有Xcode就自带有Git；或者也可以直接去<a href="http://git-scm.com/" target="_blank" rel="external">官网</a>下载安装。</p>
+<h5 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h5><p>用来做博客的远程创库、域名、服务器之类的，直接在<a href="http://github.com" target="_blank" rel="external">官网</a>注册Github账号即可。然后，建立与你用户名对应的仓库，仓库名必须为『your_user_name.github.io』。</p>
+<p>仓库建立好后，根据自己需要看是否配置<strong>SSH公钥</strong>，可以不配制，不配置的话以后每次对自己的博客有改动提交的时候就要手动输入账号密码，配置了就不需要了。至于SSH公钥的配置教程网上很多，不多说了。当时不懂，配置的过程略显辛酸。</p>
+<h3 id="正式安装hexo"><a href="#正式安装hexo" class="headerlink" title="正式安装hexo"></a>正式安装hexo</h3><p>Node和Git安装好后，即可正式安装hexo。打开终端terminal，输入以下命令。</p>
+<pre><code>$ npm install -g hexo-cli
+</code></pre><p>即可使用npm完成hexo安装；</p>
+<h5 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h5><p>安装 Hexo 完成后，执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+<pre><code>$ hexo init 文件夹名称    #在本地创建文件夹
+$ cd 文件夹名称        #进入该文件夹进行操作
+$ npm install 
+</code></pre><p>至此，全部安装工作已经完成！刚init的文件夹就是你的博客根目录，所有的操作都在里面进行。</p>
+<h5 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h5><p>安装完后可在本地测试下是否正确安装完成；使用以下命令：</p>
+<pre><code>$ hexo g   #生成
+$ hexo s   #开启本地服务
+</code></pre><p>当终端显示以下内容：</p>
+<pre><code>INFO  Start processing
+INFO  Hexo is running at http://localhost:4000/.
+Press Ctrl+C to stop.
+</code></pre><p>则可在浏览器地址栏直接访问http:localhost:4000 查看默认配置的网站了！</p>
+<h3 id="目录介绍"><a href="#目录介绍" class="headerlink" title="目录介绍"></a>目录介绍</h3><pre><code>.
+├── .deploy
+├── public
+├── scaffolds
+├── scripts
+├── source 
+|   ├── _drafts
+|   └── _posts
+├── themes
+├── _config.yml
+└── package.json
+</code></pre><ul>
+<li>.deploy：执行hexo deploy命令部署到GitHub上的内容目录</li>
+<li>public：执行hexo generate命令，输出的静态网页内容目录</li>
+<li>scaffolds：layout模板文件目录，其中的md文件可以添加编辑</li>
+<li>scripts：扩展脚本目录，这里可以自定义一些javascript脚本</li>
+<li>source：文章源码目录，该目录下的markdown和html文件均会被hexo处理。该页面对应repo的根目录，404文件、favicon.ico文件，CNAME文件等都应该放这里，该目录下可新建页面目录。</li>
+<li>_drafts：草稿文章</li>
+<li>_posts：发布文章</li>
+<li>themes：主题文件目录，更换主题直接把网上的主题放到这个文件夹，再改下_config.yml里theme名称的即可；</li>
+<li>_config.yml：全局配置文件，大多数的设置都在这里</li>
+<li>package.json：应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮</li>
+</ul>
+<p>重点说下_config.yml 文件通过 _config.yml文件配置站点的基本信息。比如以下内容：</p>
+<pre><code># Site
+title: 精靈社記
+subtitle: 倾听一个年轻人的想法与分享
+author: Julian Xu
+language: zh-CN
+</code></pre><h5 id="deploy设置"><a href="#deploy设置" class="headerlink" title="deploy设置"></a>deploy设置</h5><p>在刚刚那个_config.yml文件最下面找到以下内容：</p>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com:xujune0/xujune0.github.io.git
+  branch: master
+</code></pre><p>type 填git；</p>
+<p>repo 填你在github添加的仓库地址；    </p>
+<p>弄完之后，且配置了SSH公钥，则可直接在终端执行deploy命令,即可将内容发布到github上，此时可访问 <a href="http://your_user_name.github.io" target="_blank" rel="external">http://your_user_name.github.io</a></p>
+<pre><code>$ hexo d 
+</code></pre><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><pre><code>hexo new &quot;postName&quot; #新建文章
+hexo new page &quot;pageName&quot; #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+</code></pre><h5 id="常用复合命令"><a href="#常用复合命令" class="headerlink" title="常用复合命令"></a>常用复合命令</h5><pre><code>hexo deploy -g
+hexo server -g  
+</code></pre><h5 id="命令简写"><a href="#命令简写" class="headerlink" title="命令简写"></a>命令简写</h5><pre><code>hexo n == hexo new
+hexo g == hexo generate
+hexo s == hexo server
+hexo d == hexo deploy
+</code></pre><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>简单介绍了安装hexo的过程，总体而言，安装并不难。过程中也走过一些坑，比如配置文件缺少空格会报错。对于主题，如果你满意默认的配置的话，很快就能用了。但如果你想像我一样，去找主题，并做些修改的话，得花一些时间。过程中还遇到了个mixcontent的问题，github使用https传输导致我主题部分外链http的CSS样式被block掉了。对于技术小白，也只能通过百度搜索解决办法，最后把外链的样式copy到本地，链接到本地来才勉强解决。</p>
+<p><strong>生命不息，折腾不止！</strong>对于此博客平台，貌似还有许多要修改的地方。待日后有时间再慢慢修整。</p>
+<p>—— Julian Xu 后记于 2016.08</p>
 
 
                 <hr>
@@ -227,14 +297,6 @@
 
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/" data-toggle="tooltip" data-placement="top" title="Example Post">&larr; Previous Post</a>
-                        </li>
-                    
-                    
-                        <li class="next">
-                            <a href="/" data-toggle="tooltip" data-placement="top" title="Example Post with Code Highlight">Next Post &rarr;</a>
-                        </li>
                     
                 </ul>
 
@@ -242,9 +304,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="2015/07/09/js-module-7day/"
-                        data-title="Example Post using Keynote Layout"
-                        data-url="https://xujune0.github.io/2015/07/09/js-module-7day/" >
+                        data-thread-key="2016/08/05/hello-2016/"
+                        data-title="Welcome to Julian&#39;s Blog"
+                        data-url="https://xujune0.github.io/2016/08/05/hello-2016/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -253,6 +315,8 @@
                 
 
             </div>
+    <!-- Side Catalog Container -->
+        
 
     <!-- Sidebar Container -->
 
@@ -267,7 +331,9 @@
                     <!-- no hr -->
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a><a class="tag-link" href="/tags/Linux/">Linux</a><a class="tag-link" href="/tags/OS/">OS</a><a class="tag-link" href="/tags/Unix/">Unix</a><a class="tag-link" href="/tags/前端开发/">前端开发</a><a class="tag-link" href="/tags/生活/">生活</a><a class="tag-link" href="/tags/翻译/">翻译</a>
+                       
+                          <a class="tag" href="/tags/#生活感悟" title="生活感悟">生活感悟</a>
+                        
                     </div>
                 </section>
                 
@@ -279,17 +345,17 @@
                 <ul class="list-inline">
 
                     
-                        <li><a href="http://125cn.net">志愿时</a></li>
+                        <li><a href="http://125cn.net" target="_blank">志愿时</a></li>
                     
-                        <li><a href="http://guangdongsw.tk">广东社会工作网</a></li>
+                        <li><a href="http://guangdongsw.tk" target="_blank">广东社会工作网</a></li>
                     
-                        <li><a href="#"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
                     
-                        <li><a href="#"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
                     
-                        <li><a href="#"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
                     
-                        <li><a href="#"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
                     
                 </ul>
                 
