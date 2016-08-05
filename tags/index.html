@@ -94,14 +94,14 @@
 
                         
                         <li>
-                            <a href="/about/">关于</a>
+                            <a href="/tags/">标签</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/tags/">标签</a>
+                            <a href="/about/">关于</a>
                         </li>
                         
                     
@@ -169,6 +169,8 @@
                 
                     <a href="#生活感悟" title="生活感悟" rel="1">生活感悟</a>
                 
+                    <a href="#Hexo" title="Hexo" rel="1">Hexo</a>
+                
             </div>
 
             <!-- 标签列表 -->
@@ -177,6 +179,32 @@
             <div class="one-tag-list">
                 <span class="fa fa-tag listing-seperator" id="生活感悟">
                     <span class="tag-text">生活感悟</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2016/08/05/hello-2016/">
+                        <h2 class="post-title">
+                            Welcome to Julian's Blog
+                        </h2>
+                        
+                            <h3 class="post-subtitle">
+                                 "Hello World, Hello Friend"
+                            </h3>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="Hexo">
+                    <span class="tag-text">Hexo</span>
                 </span>
                 
                   <!-- <li class="listing-item">
@@ -380,9 +408,9 @@
 
 
 
-<!-- Image to hack wechat -->
+<!-- Image to hack wechat 
 <img src="https://xujune0.github.io/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
+ Migrate from head to bottom, no longer block render and still work -->
 
 </body>
 
