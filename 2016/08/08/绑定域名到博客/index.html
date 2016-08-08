@@ -105,14 +105,14 @@
 
                         
                         <li>
-                            <a href="/tags/">标签</a>
+                            <a href="/about/">关于</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">关于</a>
+                            <a href="/tags/">标签</a>
                         </li>
                         
                      -->
@@ -200,16 +200,16 @@
                 post-container">
 
                 <p>使用hexo+github pages搭建完博客后，接下来当然是要进行域名绑定。毕竟用user_name.github.io太长，不方便记。在此我申请了一个免费的tk域名进行了绑定，简单描述下绑定的过程。</p>
-<h3 id="1-申请域名"><a href="#1-申请域名" class="headerlink" title="1.申请域名"></a>1.申请域名</h3><p>当然，有钱的话还是注册个com或cn域名。毕竟注册完后，是自己的，不会有什么变故。而只是想体验使用的话，则可以像我一样在<a href="https://my.freenom.com/clientarea.php" target="_blank" rel="external">freenom</a>注册个TK域名。</p>
+<h3 id="申请域名"><a href="#申请域名" class="headerlink" title="申请域名"></a>申请域名</h3><p>当然，有钱的话还是注册个com或cn域名。毕竟注册完后，是自己的，不会有什么变故。而只是想体验使用的话，则可以像我一样在<a href="https://my.freenom.com/clientarea.php" target="_blank" rel="external">freenom</a>注册个TK域名。</p>
 <p>Freenom提供的顶级域名包括：.tk .ga .ml .cf .gq。注册账号申请域名。这个过程比较简单。照着网站的流程走就是了，在此不做过多讲解。</p>
-<h4 id="2-添加CNAME文件"><a href="#2-添加CNAME文件" class="headerlink" title="2.添加CNAME文件"></a>2.添加CNAME文件</h4><p>在hexo文件的source文件下新建一个CNAME文件，就建一个名称为“CNAME” 文件，没有后缀名。可用文本编辑器打开，并编辑刚才申请到的域名，比如，刚才申请到 xujune0.tk ，那么我就写xujune0.tk。添加完后，即可通过部署命令，部署到github项目的根目录中。</p>
-<h4 id="3-在DNSPod添加A记录"><a href="#3-在DNSPod添加A记录" class="headerlink" title="3.在DNSPod添加A记录"></a>3.在DNSPod添加A记录</h4><p>接下来就是做DNS解析了：</p>
+<h4 id="添加CNAME文件"><a href="#添加CNAME文件" class="headerlink" title="添加CNAME文件"></a>添加CNAME文件</h4><p>在hexo文件的source文件下新建一个CNAME文件，就建一个名称为“CNAME” 文件，没有后缀名。可用文本编辑器打开，并编辑刚才申请到的域名，比如，刚才申请到 xujune0.tk ，那么我就写xujune0.tk。添加完后，即可通过部署命令，部署到github项目的根目录中。</p>
+<h4 id="在DNSPod添加A记录"><a href="#在DNSPod添加A记录" class="headerlink" title="在DNSPod添加A记录"></a>在DNSPod添加A记录</h4><p>接下来就是做DNS解析了：</p>
 <ul>
 <li>注册个<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod账号</a>；</li>
 <li>登录账号，进入管理界面-域名解析-添加域名；<br><img src="http://obhincmn8.bkt.clouddn.com/dnspod.png" alt="pic1"></li>
 <li>为域名添加记录，这里的NS记录是自动生成，不用修改，因为我们需要我们的网站可以通过 xujune0.tk 和 www.xujune0.tk 都能访问，所以需要添加两组A记录。如下图：<br><img src="http://obhincmn8.bkt.clouddn.com/xujune0tk.png" alt="pic2"><br>记录值IP为：192.30.252.153 和 192.30.252.154</li>
 </ul>
-<h4 id="4-修改域名DNS地址"><a href="#4-修改域名DNS地址" class="headerlink" title="4.修改域名DNS地址"></a>4.修改域名DNS地址</h4><p>由于域名是在Freenom注册的，所以域名默认的DNS是Freenom提供，而现在使用DNSPod，所以就需要到Freenom修改DNS地址，把域名解析交给DNSPod。</p>
+<h4 id="修改域名DNS地址"><a href="#修改域名DNS地址" class="headerlink" title="修改域名DNS地址"></a>修改域名DNS地址</h4><p>由于域名是在Freenom注册的，所以域名默认的DNS是Freenom提供，而现在使用DNSPod，所以就需要到Freenom修改DNS地址，把域名解析交给DNSPod。</p>
 <p>方法是：在Freenom登录账号后，进入 MyDomains -&gt; Manage Domain -&gt; Management Tools -&gt; NameServers。选择自定义 NameServers，然后把DNSPod中的两个NS记录写入。</p>
 <p><img src="http://obhincmn8.bkt.clouddn.com/tk.png" alt="pic3"></p>
 <p>点击保存，然后等待全球递归DNS服务器刷新（0-72小时生效）</p>
@@ -274,6 +274,20 @@
 
             </div>
     <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">目&nbsp;录</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
         
 
     <!-- Sidebar Container -->
@@ -565,6 +579,50 @@
 
 
 <!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
