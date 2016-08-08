@@ -13,14 +13,14 @@
 
     <title>
         
-          关于 - 精靈社記 | Julian&#39;s Blog
+          绑定域名到你的Github Pages博客 - 精靈社記 | Julian&#39;s Blog
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
     
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
-    <link rel="canonical" href="https://xujune0.github.io/about/">
+    <link rel="canonical" href="https://xujune0.github.io/2016/08/08/绑定域名到博客/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -155,179 +155,147 @@
 
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/about-bg.jpg')">
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://xujune0.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('post-bg-2015.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>关于</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Hello, this is Julian Xu.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
+                        
+                    </div>
+                    <h1>绑定域名到你的Github Pages博客</h1>
+                    <h2 class="subheading"> &quot;域名绑定，那都不是事儿&quot;</h2>
+                    <span class="meta">
+                        Posted by Julian Xu on
+                        2016-08-08
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
-
-<!-- USE SIDEBAR -->
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <p>读大学时<br>学的是『做人助人』<br>改变的是『价值观』<br>增加的是『理想』</p>
-<p>读大学后<br>面对的是『生活』<br>缺乏的是『技能』<br>需要的是『成长』</p>
-<h4 id="我是谁？"><a href="#我是谁？" class="headerlink" title="我是谁？"></a>我是谁？</h4><p>一个不会飞的精灵，2015年本科毕业。目前从事公益&amp;互联网产品工作。以为总算熬出头，能够迈入社会。但其实不然。生活技能缺少，工作经验不足，需要学习的东西很多，以促使自己避免迷茫，逐渐成长。</p>
-<h4 id="为什么创建『精靈社記』？"><a href="#为什么创建『精靈社記』？" class="headerlink" title="为什么创建『精靈社記』？"></a>为什么创建『精靈社記』？</h4><p>工作后发现，其实并无多少时间去学习。只能利用碎片化时间，这里看一下，那里了解一些。一段时间下来，发现自己却没能够去总结思考。归根究底，可能是自己懒癌，没有形成习惯。更是因为没有做笔记，做记录的行为。正所谓，好记性不如烂笔头，觉得自己是该通过一些工具撰写及思考。</p>
-<p>两年前，曾先后试过用emlog、WordPress搭建过博客，但在一年前，回看起来写的文章却不多。又是因为懒，懒得去做维护空间、域名什么的。于是，在一年前开通了微信公众平台，搭建『精靈社記』。生命不息，折腾不止！！而现在又利用hexo搭建了博客。</p>
-<p>见过大咖牛人撰写个人成就及经验分享；就没见过菜鸟新人写其个人成长的历程的；而且相信也不会有太多人关注，毕竟没什么X用。但这并没什么关系。在这里，我的初衷是记录自己的成长与思考，分享笔记干货，与人交流，共同成长。</p>
-<p>相对应的，</p>
-<p>『精靈社記』的内容有以下几个方面：</p>
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>使用hexo+github pages搭建完博客后，接下来当然是要进行域名绑定。毕竟用user_name.github.io太长，不方便记。在此我申请了一个免费的tk域名进行了绑定，简单描述下绑定的过程。</p>
+<h3 id="1-申请域名"><a href="#1-申请域名" class="headerlink" title="1.申请域名"></a>1.申请域名</h3><p>当然，有钱的话还是注册个com或cn域名。毕竟注册完后，是自己的，不会有什么变故。而只是想体验使用的话，则可以像我一样在<a href="https://my.freenom.com/clientarea.php" target="_blank" rel="external">freenom</a>注册个TK域名。</p>
+<p>Freenom提供的顶级域名包括：.tk .ga .ml .cf .gq。注册账号申请域名。这个过程比较简单。照着网站的流程走就是了，在此不做过多讲解。</p>
+<h4 id="2-添加CNAME文件"><a href="#2-添加CNAME文件" class="headerlink" title="2.添加CNAME文件"></a>2.添加CNAME文件</h4><p>在hexo文件的source文件下新建一个CNAME文件，就建一个名称为“CNAME” 文件，没有后缀名。可用文本编辑器打开，并编辑刚才申请到的域名，比如，刚才申请到 xujune0.tk ，那么我就写xujune0.tk。添加完后，即可通过部署命令，部署到github项目的根目录中。</p>
+<h4 id="3-在DNSPod添加A记录"><a href="#3-在DNSPod添加A记录" class="headerlink" title="3.在DNSPod添加A记录"></a>3.在DNSPod添加A记录</h4><p>接下来就是做DNS解析了：</p>
 <ul>
-<li>产品干货</li>
-<li>互联网思维 </li>
-<li>社会公益</li>
-<li>生活感悟</li>
+<li>注册个<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod账号</a>；</li>
+<li>登录账号，进入管理界面-域名解析-添加域名；<br><img src="http://obhincmn8.bkt.clouddn.com/dnspod.png" alt="pic1"></li>
+<li>为域名添加记录，这里的NS记录是自动生成，不用修改，因为我们需要我们的网站可以通过 xujune0.tk 和 www.xujune0.tk 都能访问，所以需要添加两组A记录。如下图：<br><img src="http://obhincmn8.bkt.clouddn.com/xujune0tk.png" alt="pic2"><br>记录值IP为：192.30.252.153 和 192.30.252.154</li>
 </ul>
-<p>—2016.08.05,By Julian Xu </p>
+<h4 id="4-修改域名DNS地址"><a href="#4-修改域名DNS地址" class="headerlink" title="4.修改域名DNS地址"></a>4.修改域名DNS地址</h4><p>由于域名是在Freenom注册的，所以域名默认的DNS是Freenom提供，而现在使用DNSPod，所以就需要到Freenom修改DNS地址，把域名解析交给DNSPod。</p>
+<p>方法是：在Freenom登录账号后，进入 MyDomains -&gt; Manage Domain -&gt; Management Tools -&gt; NameServers。选择自定义 NameServers，然后把DNSPod中的两个NS记录写入。</p>
+<p><img src="http://obhincmn8.bkt.clouddn.com/tk.png" alt="pic3"></p>
+<p>点击保存，然后等待全球递归DNS服务器刷新（0-72小时生效）</p>
+<p>然后，就可以通过访问<a href="http://xujune0.tk" target="_blank" rel="external">xujune0.tk</a>和<a href="http://www.xujune0.tk" target="_blank" rel="external">www.xujune0.tk</a>进入我的博客啦！！</p>
+<blockquote>
+<p>教程参照于网络，配合自身实践生成此文。</p>
+</blockquote>
+
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share flat"
+                    style="text-align: right"
+                    data-thread-key="2016/08/08/绑定域名到博客/"
+                    data-title="绑定域名到你的Github Pages博客"
+                    data-url="https://xujune0.github.io/2016/08/08/绑定域名到博客/"
+                    data-images="http://obhincmn8.bkt.clouddn.com/logoo.png"
+                    data-content="使用hexo+github pages搭建完博客后，接下来当然是要进行域名绑定。毕竟用user...  文章来源：精靈社記 | Julian&#39;s Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><!--note<a class="ds-more" href="javascript:void(0);">  -->分享到：<!--note </a> --> </li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat" >微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        
+                
+                        <li><a class="ds-qzone flat" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+                      </ul>
+                      <!--note <div class="ds-share-icons-more">
+                      </div> -->
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/08/07/郁达夫代表作有感/" data-toggle="tooltip" data-placement="top" title="郁达夫代表作有感">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="2016/08/08/绑定域名到博客/"
+                        data-title="绑定域名到你的Github Pages博客"
+                        data-url="https://xujune0.github.io/2016/08/08/绑定域名到博客/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
 
             </div>
+    <!-- Side Catalog Container -->
+        
+
     <!-- Sidebar Container -->
+
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <!-- no hr -->
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                            
-                            <a href="/tags/#hexo" title="hexo" rel="1">hexo</a>
-                            
-                        
-                            
-                            <a href="/tags/#生活感悟" title="生活感悟" rel="1">生活感悟</a>
-                            
-                        
-                            
-                            <a href="/tags/#Hexo" title="Hexo" rel="1">Hexo</a>
-                            
-                        
-                            
-                            <a href="/tags/#更新日志" title="更新日志" rel="1">更新日志</a>
-                            
-                        
-                            
-                            <a href="/tags/#文学" title="文学" rel="1">文学</a>
-                            
+                       
+                          <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
                         
                     </div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-
-                        
-                            <img src="//xujune0.github.io/img/avatar.jpg" />
-                        
-
-                        
-                            <p>生命不息，折腾不止!</p>
-                        
-
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            <!-- 
-                            
-                                <li>
-                                    <a target="_blank" href="https://twitter.com/xujune0">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                             -->
-                            
-                                <li>
-                                    <a target="_blank" href="https://www.zhihu.com/people/xujune0">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-                            
-                                <li>
-                                    <a target="_blank" href="http://weibo.com/xujune0">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-                            
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/xujune0">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-                            <!-- 
-                                <li>
-                                    <a target="_blank"  href="https://github.com/xujune0">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                             -->
-                            
-                            
-                            
-                                <li>
-                                    <a target="_blank"  href="https://www.linkedin.com/in/xujune0">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                </section>
-                
                 <!-- Friends Blog -->
                 
                 <hr>
@@ -350,9 +318,69 @@
                 </ul>
                 
             </div>
-        
+
+        </div>
     </div>
-</div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'xujune0github';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
 
 
     <!-- Footer -->
