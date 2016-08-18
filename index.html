@@ -17,7 +17,7 @@
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
-    
+    <link href="/css/calendar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
     <link rel="canonical" href="https://xujune0.github.io/">
@@ -296,6 +296,31 @@ Freenom提供的顶级域名......
 </div>
 <hr>
 
+<div class="post-preview">
+
+    <a href="/2016/06/01/work-at-home/">
+        <h2 class="post-title">
+            在家办公很爽，你准备好了吗？
+        </h2>
+        <h3 class="post-subtitle">
+             "Hello World, Hello Blog"
+        </h3>
+        <div class="post-content-preview">
+            
+在上学的时候就听说过国外一些在家办公的例子：穿着睡衣坐着，喝着自己泡的咖啡或茶，这样子的在家办公听起来是如此惬意。而正因为它的灵活性和自由度，在家办公经常被认为是一种理想的工作状态。
+
+《福布斯》杂志记者，兼神经科学专家克里斯汀·卡曼福德在她的文章中指出在家办公的种种福利：“在家办公可以让人们工作效率和质量更高，更可以节约成本。”
+
+因此，假如有人跟你说：“我是在家办公的…”，想必你一定会......
+        </div>
+    </a>
+    <p class="post-meta">
+        <i class="fa fa-calendar-o"></i> &nbsp;2016-06-01 &nbsp; | <i class="menu-item-icon fa fa-fw fa-user"></i> Julian Xu
+    </p>
+
+</div>
+<hr>
+
 
 
 <!-- Pager -->
@@ -323,7 +348,7 @@ Freenom提供的顶级域名......
                     <div class="tags">
                         
                             
-                            <a href="/tags/#更新日志" title="更新日志" rel="1">更新日志</a>
+                            <a href="/tags/#生活感悟" title="生活感悟" rel="2">生活感悟</a>
                             
                         
                             
@@ -331,11 +356,11 @@ Freenom提供的顶级域名......
                             
                         
                             
-                            <a href="/tags/#文学" title="文学" rel="1">文学</a>
+                            <a href="/tags/#更新日志" title="更新日志" rel="1">更新日志</a>
                             
                         
                             
-                            <a href="/tags/#生活感悟" title="生活感悟" rel="1">生活感悟</a>
+                            <a href="/tags/#文学" title="文学" rel="1">文学</a>
                             
                         
                     </div>
@@ -424,7 +449,22 @@ Freenom提供的顶级域名......
                                 </li>
                             
                         </ul>
+
                     </div>
+
+
+                </section>
+                <hr>
+
+                <section class="visible-md visible-lg">
+                    <div >
+                      
+                      <h5 >日历云</h5>
+                      <div id="calendar"></div>
+
+                      </div>
+
+
                 </section>
                 
                 <!-- Friends Blog -->
@@ -448,6 +488,9 @@ Freenom提供的顶级域名......
                     
                 </ul>
                 
+                
+               
+
             </div>
         
     </div>
@@ -637,6 +680,17 @@ Freenom提供的顶级域名......
 
 <!-- Side Catalog -->
 
+
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:true, root:'calendar/'});
+    
+    });
+  </script>
 
 
 

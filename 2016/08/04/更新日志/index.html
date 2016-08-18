@@ -17,7 +17,7 @@
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
-    
+    <link href="/css/calendar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
     <link rel="canonical" href="https://xujune0.github.io/2016/08/04/更新日志/">
@@ -266,6 +266,10 @@
                             <a href="/2016/08/05/hello-2016/" data-toggle="tooltip" data-placement="top" title="Welcome to Julian's Blog">&larr; Previous Post</a>
                         </li>
                     
+                    
+                        <li class="next">
+                            <a href="/2016/06/01/work-at-home/" data-toggle="tooltip" data-placement="top" title="在家办公很爽，你准备好了吗？">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -578,6 +582,17 @@
 
 <!-- Side Catalog -->
 
+
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:true, root:'calendar/'});
+    
+    });
+  </script>
 
 
 

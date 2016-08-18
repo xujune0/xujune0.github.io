@@ -17,7 +17,7 @@
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
-    
+    <link href="/css/calendar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
     <link rel="canonical" href="https://xujune0.github.io/about/">
@@ -220,7 +220,7 @@
                     <div class="tags">
                         
                             
-                            <a href="/tags/#更新日志" title="更新日志" rel="1">更新日志</a>
+                            <a href="/tags/#生活感悟" title="生活感悟" rel="2">生活感悟</a>
                             
                         
                             
@@ -228,11 +228,11 @@
                             
                         
                             
-                            <a href="/tags/#文学" title="文学" rel="1">文学</a>
+                            <a href="/tags/#更新日志" title="更新日志" rel="1">更新日志</a>
                             
                         
                             
-                            <a href="/tags/#生活感悟" title="生活感悟" rel="1">生活感悟</a>
+                            <a href="/tags/#文学" title="文学" rel="1">文学</a>
                             
                         
                     </div>
@@ -321,7 +321,22 @@
                                 </li>
                             
                         </ul>
+
                     </div>
+
+
+                </section>
+                <hr>
+
+                <section class="visible-md visible-lg">
+                    <div >
+                      
+                      <h5 >日历云</h5>
+                      <div id="calendar"></div>
+
+                      </div>
+
+
                 </section>
                 
                 <!-- Friends Blog -->
@@ -345,6 +360,9 @@
                     
                 </ul>
                 
+                
+               
+
             </div>
         
     </div>
@@ -534,6 +552,17 @@
 
 <!-- Side Catalog -->
 
+
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:true, root:'calendar/'});
+    
+    });
+  </script>
 
 
 

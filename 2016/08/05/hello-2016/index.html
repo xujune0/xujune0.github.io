@@ -17,7 +17,7 @@
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
-    
+    <link href="/css/calendar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
     <link rel="canonical" href="https://xujune0.github.io/2016/08/05/hello-2016/">
@@ -173,9 +173,9 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
-                        
                           <a class="tag" href="/tags/#生活感悟" title="生活感悟">生活感悟</a>
+                        
+                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
                         
                     </div>
                     <h1>Welcome to Julian&#39;s Blog</h1>
@@ -383,9 +383,9 @@ hexo d == hexo deploy
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
-                        
                           <a class="tag" href="/tags/#生活感悟" title="生活感悟">生活感悟</a>
+                        
+                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
                         
                     </div>
                 </section>
@@ -661,6 +661,17 @@ hexo d == hexo deploy
 
 <!-- Side Catalog -->
 
+
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:true, root:'calendar/'});
+    
+    });
+  </script>
 
 
 
