@@ -13,14 +13,14 @@
 
     <title>
         
-          精靈社記 | Julian&#39;s Blog
+          网站常见模块：面包屑 - 精靈社記 | Julian&#39;s Blog
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
     <link href="/css/calendar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
-    <link rel="canonical" href="https://xujune0.github.io/archives/">
+    <link rel="canonical" href="https://xujune0.github.io/2016/08/23/breadcrum/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -164,207 +164,261 @@
 
     <!-- Main Content -->
     
+<!-- Image to hack wechat -->
+<!-- <img src="https://xujune0.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('http://obhincmn8.bkt.clouddn.com/post-bg-js-module.jpg')">
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('post-bg-2015.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>归档</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Hi,this is Archive.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#产品/设计" title="产品/设计">产品/设计</a>
+                        
+                    </div>
+                    <h1>网站常见模块：面包屑</h1>
+                    <h2 class="subheading">&quot;我在网页中，为你指路&quot;</h2>
+                    <span class="meta">
+                        Posted by Julian Xu on
+                        2016-08-23
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>从最开始接触互联网，在浏览网站的时，经常可看到一行表示当前位置的指示，如下图所示。而初次认识它的名字，则是在去年1月开始进行产品实习的时候，才知道了它的名字叫：面包屑导航。<br><img src="http://obhincmn8.bkt.clouddn.com/QQ20160823-0@2x.png" alt=""></p>
+<blockquote>
+<p><strong>面包屑导航</strong>（英语：Breadcrumb Trail）是在用户界面中的一种导航辅助。它是用户一个在程序或文件中确定和转移他们位置的一种方法。面包屑这个词来自糖果屋这个童话故事。（摘自维基百科）</p>
+</blockquote>
+<p>在故事里，当汉赛尔和格莱特穿过森林时，不小心迷路了，但是他们发现在沿途走过的地方都撒下了面包屑，让这些面包屑来帮助他们找到回家的路。所以，面包屑导航的作用是告诉访问者他们目前在网站中的位置以及如何返回。<br><img src="http://obhincmn8.bkt.clouddn.com/QQ20160823-1@2x.png" alt=""></p>
+<p>#####面包屑的好处</p>
+<p>作为指引，面包屑成为了用户了解网站背景信息的重要途径，帮助用户了解下列问题的答案：</p>
+<ul>
+<li><p>我在哪里？展现了网站的结构层次，面包屑能让用户知道他们所处的位置。</p>
+</li>
+<li><p>我还能去哪里？面包屑提升了整个网站的可查找性，用户也随之明白网站还有哪些其他的部分。</p>
+</li>
+<li><p>是否应当浏览更多？面包屑揭示出网站有更多值得探索的内容，鼓励用户浏览更多。反过来，面包屑的出现降低了网站的跳出率。</p>
+</li>
+</ul>
+<p>此外，面包屑还具有临时性，动态性，占用屏幕空间小，干扰性小等特点。</p>
+<p>#####面包屑的分类</p>
+<p><strong>1.基于用户所在的层级位置。（Location-based）</strong></p>
+<p>正如刚开始所展示的那个面包屑，基于位置的面包屑用于告知用户在当前网站中所在的结构层级。用在具有多级导航（通常具有2级以上导航）的网站中。这种层级展示性的面包屑对于从外部来源（比如搜索引擎）进入网站的用户而言，具有明显的指引性作用。
+　　</p>
+<p><strong>2.基于产品的属性。(Attribute-based)</strong></p>
+<p>这种类型的面包屑常出现在具有大量类别产品和服务的网站中，如电子商务网站，网上教学服务等。淘宝、京东、亚马逊都可见到。<br><img src="http://obhincmn8.bkt.clouddn.com/QQ20160823-2@2x.png" alt=""></p>
+<p><strong>3.基于用户的足迹。(Path-based)</strong></p>
+<p>显示用户浏览的轨迹，面包屑之间没有明显的层级关系。也称“历史足迹”，是动态呈现而非静态的。下图可简单说明其余基于位置的区别：<br><img src="http://obhincmn8.bkt.clouddn.com/QQ20160823-3@2x.png" alt=""><br>而在我实际使用过程中，更多的是基于位置的使用，基于用户足迹的相对少见。</p>
+<p>#####使用面包屑应注意的地方</p>
+<p>1、不要忽略了网站导航的重要性，面包屑只是一个辅助导航系统，它无法替代主要的导航系统。</p>
+<p>2、面包屑最后一级不要加超链接。面包屑的最后一个层级是当前的页面，而这一项在面包屑中是不应该加上链接的，因为它只起到展示定位的作用，没有任何意义。就这个问题，我曾经被前端姐姐提醒过。囧</p>
+<p>3、使用分隔符。最常见的分隔符应该是“&gt;”，当然还有其他的样式，可参考下图：<br><img src="http://obhincmn8.bkt.clouddn.com/QQ20160823-4@2x.png" alt="">（此图摘自：腾讯CDC）</p>
+<p>4、面包屑设计不宜成为视觉的焦点。即不要太过显眼，毕竟只是辅助导航系统，别喧宾夺主了。</p>
+<p>5、移动端页面上不要使用面包屑。基于移动使用的场景，网页层级应尽量简单。强行使用面包屑使得复杂化，且面包屑导航不利于点击操作。</p>
+<p>#####总结</p>
+<p>面包屑看似不起眼的一个功能模块，却有着童话故事的渊源。它使得用户能够清晰的知道自己所在位置，了解网站的结构，可减少跳出率，对于网站是十分有意义的。总的而言，面包屑并不复杂、增加网站的易用性是其主要作用。而作为辅助导航系统，则不宜将其过于复杂及强调。【产品】<br>​</p>
+<hr>
+<p>作者： <strong>Julian Xu</strong>，目前为互联网产品助理，望能互相学习及交流。#生命不息，折腾不止# </p>
+<p><strong>欢迎转载，转载请注明出处！</strong></p>
 
 
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016&nbsp;年</a>
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share flat"
+                    style="text-align: right"
+                    data-thread-key="2016/08/23/breadcrum/"
+                    data-title="网站常见模块：面包屑"
+                    data-url="https://xujune0.github.io/2016/08/23/breadcrum/"
+                    data-images="http://obhincmn8.bkt.clouddn.com/logoo.png"
+                    data-content="从最开始接触互联网，在浏览网站的时，经常可看到一行表示当前位置的指示，如下图所示。而初次认识它...  文章来源：精靈社記 | Julian&#39;s Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><!--note<a class="ds-more" href="javascript:void(0);">  -->分享到：<!--note </a> --> </li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat" >微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        
+                
+                        <li><a class="ds-qzone flat" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+                      </ul>
+                      <!--note <div class="ds-share-icons-more">
+                      </div> -->
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/08/19/slideshow/" data-toggle="tooltip" data-placement="top" title="网站常见模块：轮播图">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="2016/08/23/breadcrum/"
+                        data-title="网站常见模块：面包屑"
+                        data-url="https://xujune0.github.io/2016/08/23/breadcrum/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">目&nbsp;录</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#产品/设计" title="产品/设计">产品/设计</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>友情链接</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://guangdongsw.tk" target="_blank">广东社会工作网</a></li>
+                    
+                        <li><a href="http://125cn.net" target="_blank">志愿时</a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                </ul>
+                
+            </div>
+
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/08/23/breadcrum/" class="archive-article-date">
-  	<time datetime="2016-08-23T14:18:39.000Z" itemprop="datePublished">8月 23日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/23/breadcrum/">网站常见模块：面包屑</a>
-    </h1>
-  
-
-
-      
-           </header>
-  </div>
+    </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/08/19/slideshow/" class="archive-article-date">
-  	<time datetime="2016-08-19T07:34:37.000Z" itemprop="datePublished">8月 19日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/19/slideshow/">网站常见模块：轮播图</a>
-    </h1>
-  
 
 
-      
-           </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/08/08/绑定域名到博客/" class="archive-article-date">
-  	<time datetime="2016-08-08T08:18:15.000Z" itemprop="datePublished">8月 8日</time>
-</a>
-      </div>
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'xujune0github';
 
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/08/绑定域名到博客/">绑定域名到Github Pages博客</a>
-    </h1>
-  
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
 
 
-      
-           </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/08/07/郁达夫代表作有感/" class="archive-article-date">
-  	<time datetime="2016-08-07T13:44:47.000Z" itemprop="datePublished">8月 7日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/07/郁达夫代表作有感/">郁达夫代表作有感</a>
-    </h1>
-  
 
 
-      
-           </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/08/05/hello-2016/" class="archive-article-date">
-  	<time datetime="2016-08-05T08:00:00.000Z" itemprop="datePublished">8月 5日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/05/hello-2016/">Welcome to Julian&#39;s Blog</a>
-    </h1>
-  
 
 
-      
-           </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/08/04/更新日志/" class="archive-article-date">
-  	<time datetime="2016-08-04T02:42:12.000Z" itemprop="datePublished">8月 4日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/04/更新日志/">开发日志</a>
-    </h1>
-  
-
-
-      
-           </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/06/01/work-at-home/" class="archive-article-date">
-  	<time datetime="2016-06-01T06:29:17.000Z" itemprop="datePublished">6月 1日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/01/work-at-home/">在家办公很爽，你准备好了吗？</a>
-    </h1>
-  
-
-
-      
-           </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 
@@ -550,6 +604,50 @@
 
 
 <!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
