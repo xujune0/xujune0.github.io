@@ -13,14 +13,14 @@
 
     <title>
         
-          精靈社記 | Julian&#39;s Blog
+          认识面向对象|精灵笔记 - 精靈社記 | Julian&#39;s Blog
         
     </title>
     <link href="/css/zzsc.css" rel="stylesheet" type="text/css">
     <link href="/css/calendar.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
-    <link rel="canonical" href="https://xujune0.github.io/tags/产品-设计-生活感悟/">
+    <link rel="canonical" href="https://xujune0.github.io/2016/11/07/object-note/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -166,63 +166,268 @@
 
     <!-- Main Content -->
     
+<!-- Image to hack wechat -->
+<!-- <img src="https://xujune0.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('http://obhincmn8.bkt.clouddn.com/post-bg-js-module.jpg')">
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('http://obhincmn8.bkt.clouddn.com/post-bg-js-module.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>归档</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Hi,this is Archive.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#产品/设计 读书笔记" title="产品/设计 读书笔记">产品/设计 读书笔记</a>
+                        
+                    </div>
+                    <h1>认识面向对象|精灵笔记</h1>
+                    <h2 class="subheading"> &quot;万物皆对象&quot;</h2>
+                    <span class="meta">
+                        Posted by Julian Xu on
+                        2016-11-07
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><img src="http://upload-images.jianshu.io/upload_images/1176416-0c02e7992d351c3b?imageMogr2/auto-orient/strip" alt=""></p>
+<blockquote>
+<p>“面向对象”及“面向过程”，当年上计算机双学位C语言课程时，记住了这两个词，但只知道C是面向过程的，C++是面向对象的。可惜后来没能坚持上双学位的课程而中断，对于面向对象一词也是模糊不清。今天，一同通过笔记的形式来全面认识面向对象。</p>
+</blockquote>
+<p><strong>面向对象简介</strong></p>
+<p>面向对象是一种新兴程序设计和开发方法，其基本思想是使用对象、类、封装、继承、关联、消息等基本概念来对系统进行分析与设计。</p>
+<p><strong>面向对象的核心是【对象】：</strong></p>
+<p>对象是系统中用来描述客观事物的一个实体，是构成系统的一个基本单位。一个对象由一组属性和对这组属性进行操作的一组服务组成。更抽象地讲，对象是问题域或实现域中某些事物的一个抽象，反映该事物在系统中需要保持的信息和发挥的作用；是一组属性和有权对这些属性进行操作的一组服务的封装体。而客观世界是由对象和对象之间的联系组成的。</p>
+<p><strong>对象的特点有：</strong></p>
+<ol>
+<li>万物皆对象。现实中的所有事物都视为对象；例如一栋楼、一本书、一片叶子…</li>
+</ol>
+<ul>
+<li><p>对象都是唯一的。正如世界上没有两个完全相同的人。</p>
+</li>
+<li><p>对象具有属性和行为。例如一个超市的顾客具有姓名、年龄、体重等属性，同时也具有购物、结账等行为。</p>
+</li>
+<li><p>对象具有状态。状态是指某一时刻对象的各个属性的取值。因为对象的属性并非一成不变的。</p>
+</li>
+<li><p>对象都属于某个类别。每个对象都是某个类别的实例。例如收银员和顾客是两个不同的实例，一个是收银员类的实例，一个是顾客类的实例。同一个类的多有实例都具有相同的属性，只不过属性的取值不一定相同。</p>
+</li>
+</ul>
+<p>面向对象可以分为：面向对象的分析（OOA）【做什么】、面向对象的设计（OOD）【怎么做】和面向对象的编程（OOP）【实现】。</p>
+<p><strong>面向对象的主要特性：</strong></p>
+<ol>
+<li><p>抽象（abstract）：忽略事物中与当前目标无关的非本质特征，更充分地注意当前目标有关的本质特征。从而找出事物的共性，并把具有共性的事物归为一类，得到一个抽象地概念。例如在设计一个学生管理系统的过程中，只关心学生的学号、班级、成绩等，而忽略其身高、体重等信息。</p>
+</li>
+<li><p>封装（encapsulation）:把对象的属性和行为结合成一个独立的单位，并尽可能隐蔽对象的内部细节。两个含义：一是把对象的全部属性和行为结合在一起，形成一个不可分割的独立单位，对象的属性值（公有的属性值除外）只能由这个对象的行为来读取和修改；而是尽可能隐蔽对象的内部细节，对外形成一道屏障，与外部联系只能通过外部接口是想。<br>【封装的信息屏蔽作用反映了事物的相对独立性，可以只关心它对外所提供的接口，即能做什么，而不注意其内部细节，即怎么提供这些服务。例如一台冰箱，我们不需知道其具体的实现细节，只需知道怎么打开冰箱、调整温度及存储食品即可。】</p>
+</li>
+<li><p>继承：运用抽象的原则舍弃对象特性，提取器共性，从而得到一个对象集的类。在这个类的基础上，再考虑抽象过程中被舍弃的一部分对象的特性，则可形成一个新的类。这个新类具有前一个类的全部特征，是前一个类的子集，形成一种层次结构，即继承结构。</p>
+</li>
+<li><p>多态：面向对象设计借鉴客观世界的多态性，体现在不同的对象收到相同的消息时产生多种不同的行为。</p>
+</li>
+<li><p>关联。在面向对象的方法中，用关联来表示类或对象集合之间的联系。常把对象之间的连接称为链接，而把存在在对象连接的类之间的联系称为关联。可以分为：一对一、一对多、多对多3中关联情况。</p>
+</li>
+<li><p>聚合。在面向对象的技术中像这样将一个复杂的对象分解为几个简单的对象的方法称为聚合。</p>
+</li>
+<li><p>消息：指对象之间在交互中所传递的通信信息。一个消息一般应该含有：接收消息的对象、请求该对象提供的服务、输入信息和响应信息。</p>
+</li>
+</ol>
+<p>面向对象的开发中，通常把面向对象系统中相互联系的所有对象分成3层：界面表示层、业务逻辑层和数据访问层，区分的目的是为了“高内聚、低耦合”的思想。</p>
+<p><strong>数据访问层：</strong>主要是对原始数据（数据库或者文本文件等存放数据的形式）的操作层，不是指原始数据，是对数据的操作，而不是数据库，具体为业务逻辑层或表示层提供数据服务。</p>
+<p><strong>业务逻辑层：</strong>主要是针对具体的问题的操作，也可以理解成对数据层的操作，对数据业务逻辑处理。</p>
+<p><strong>表示层：</strong>展现给用户的界面。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1176416-9250b6338f4740cd?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><strong>面向对象中的3种模型：</strong></p>
+<p>使用3种模型从不同的角度描述系统，分别是：描述系统内部对象及其关系的类模型、描述对象生命历史的状态模型、描述对象之间交互行为的交互模型；</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1176416-7163ea11eab0802d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>从根本上来讲，面向对象是一种方法论，不仅仅是一种编程技巧和编程风格，而是一套可用于软件开发全过程的软件工程方法。而且可以将面向对象开发看做是一种思维方式。所以说，学任何东西除了学习某种技能外，也要同时掌握其思维方式。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1176416-ed7c8062ec512ef7.gif?imageMogr2/auto-orient/strip" alt=""></p>
 
 
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016&nbsp;年</a>
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share flat"
+                    style="text-align: right"
+                    data-thread-key="2016/11/07/object-note/"
+                    data-title="认识面向对象|精灵笔记"
+                    data-url="https://xujune0.github.io/2016/11/07/object-note/"
+                    data-images="http://obhincmn8.bkt.clouddn.com/logoo.png"
+                    data-content="
+
+“面向对象”及“面向过程”，当年上计算机双学位C语言课程时，记住了这两个词，但只知道C是面...  文章来源：精靈社記 | Julian&#39;s Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><!--note<a class="ds-more" href="javascript:void(0);">  -->分享到：<!--note </a> --> </li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat" >微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        
+                
+                        <li><a class="ds-qzone flat" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+                      </ul>
+                      <!--note <div class="ds-share-icons-more">
+                      </div> -->
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/12/07/marketing/" data-toggle="tooltip" data-placement="top" title="营销|人人都需要的一门课">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/09/09/app/" data-toggle="tooltip" data-placement="top" title="axure原型图|常见的APP界面布局">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="2016/11/07/object-note/"
+                        data-title="认识面向对象|精灵笔记"
+                        data-url="https://xujune0.github.io/2016/11/07/object-note/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#产品/设计 读书笔记" title="产品/设计 读书笔记">产品/设计 读书笔记</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>友情链接</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://yihu.org.cn" target="_blank">益呼网</a></li>
+                    
+                        <li><a href="http://125cn.net" target="_blank">志愿时</a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank"></a></li>
+                    
+                </ul>
+                
+            </div>
+
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-       <div class="article-meta">
-      <a href="/2016/06/27/2016-06-27/" class="archive-article-date">
-  	<time datetime="2016-06-27T10:45:22.000Z" itemprop="datePublished">6月 27日</time>
-</a>
-      </div>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/27/2016-06-27/">2016-06-27</a>
-    </h1>
-  
-
-
-      
-           </header>
-  </div>
+    </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'xujune0github';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 
