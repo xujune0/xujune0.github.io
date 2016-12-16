@@ -1,4 +1,15 @@
 @media (min-width: 768px) {
+  #page-nav {
+    position: relative;
+    margin: 10px 200px;
+  }
+  .page-number {
+    padding-right: 15px;
+  }
+  .page-number current {
+    color: #00f;
+    font-weight: blod;
+  }
   .archives-wrap {
     position: relative;
     margin: 0 30px;
