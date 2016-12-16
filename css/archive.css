@@ -6,9 +6,8 @@
   .page-number {
     padding-right: 15px;
   }
-  .page-number current {
-    color: #00f;
-    font-weight: blod;
+  .extend {
+    padding-right: 15px;
   }
   .archives-wrap {
     position: relative;
@@ -142,6 +141,16 @@
   }
 }
 @media (max-width: 768px) {
+  #page-nav {
+    position: relative;
+    margin: 10px 30px;
+  }
+  .page-number {
+    padding-right: 15px;
+  }
+  .extend {
+    padding-right: 15px;
+  }
   .archives-wrap {
     position: relative;
     margin: 30px;
